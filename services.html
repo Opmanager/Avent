@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------SEO-Optimization---------------- -->
+    <meta name=“description” content="Logo Genius, a Dallas graphic designer in Dallas, Texas.  Offer logo, SEO, social media management, Dallas web design, and web development." />
+    <meta name="keywords" content="Logo Genius, Logo, Genius, Graphic Design, Web Design">
+    <meta name="author" content="Logo Genius">
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="DogpcsIsv8MfOJNDSMVMBvUm1QvIUQ4CYFODmIn3haI"/>
+    <!-- ----------------SEO-Optimization---------------- -->
+
+    <title>Avent | Diversity Consulting LLC</title>
+    <!-- Google Fonts -->
+        <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <!-- Services Header Section -->
+    <header class="services-header" id="services-header">
+        <div class="container">
+            <div class="services-header-box">
+                <h1 class="primary-heading-white margin-bottom-2">Workshops | Keynotes | Coaching</h1>
+                <!-- <p class="primary-text-white margin-bottom-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit suscipit ea saepe iste molestiae, fuga facere labore est distinctio, reprehenderit delectus perspiciatis repellendus possimus sed eum accusamus quas dolorem ipsa?</p> -->
+                <!-- <div class="header-button padding-bottom-4">
+                    <a href="#pricing" class="btn-primary">Explore Events</a>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/Avent Logos-03.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">list</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="services.html">Services</a>
+                <a class="nav__link" href="events.html">Events</a>
+                <a class="nav__link" href="consultants.html">Consulants</a>
+                <a class="nav__link" href="testimonials.html">Testimonials</a>
+                <a class="btn-primary" href="#Contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 0.9)
+            }, {
+                threshold: 0.9
+            });
+            
+            observer.observe(document.querySelector(".services-header"));
+        });
+        </script>
+
+<!-- Workshops Section -->
+<section class="workshops padding-bottom-8 padding-top-8">
+    <div class="container">
+        <div class="workshops-box">
+            <div class="workshops-image">
+                <img src="img/christina-wocintechchat-com-UTw3j_aoIKM-unsplash.jpg" alt="">
+            </div>
+            <div class="workshops-text">
+                <h4 class="tertiary-heading-primary margin-bottom-1">"Educate For Action"</h4>
+                <h2 class="primary-heading-primary margin-bottom-2">Yolanda Avent Workshops</h2>
+                <p class="primary-text-grey">Racism 101, 
+                    An Introduction to Implicit Bias, 
+                    Implicit Bias: Advanced, 
+                    Navigating Your Cultural Lens, 
+                    Self Identity and Awareness, 
+                    Race in America, 
+                    Creating Inclusive Environments, 
+                    Inclusive Language, 
+                    An Introduction to Microaggressions, 
+                    Microaggressions: Advanced, 
+                    White Fragility, 
+                    Creating Inclusive Classrooms, 
+                    Racism & Religion: Strange Bedfellows, 
+                    Race Reconciliation, 
+                    Diversity In the Workplace, 
+                    Group Dynamics, 
+                    Building LGBTQ+ Inclusive Spaces, 
+                    Generational Diversity, 
+                    Teaching Social Justice in K-12, 
+                    Microaggressions in Advising, 
+                    Implicit Bias in Healthcare, 
+                    Colorism and Colonialism, 
+                    Privilege 101, 
+                    Neurodiversity</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Keynote Section -->
+<section class="keynote padding-top-8 padding-bottom-8">
+    <div class="container">
+        <div class="keynote-box">
+            <div class="keynote-text">
+                <h4 class="tertiary-heading-primary margin-bottom-1">Keynote</h4>
+                <h2 class="primary-heading-primary margin-bottom-2">Retreats, Conferences, Symposiums</h2>
+                <p class="primary-text-grey margin-bottom-2">Yolanda has provided keynote addresses and presentations on a variety of topics locally, regionally, nationally, and internationally. All workshop topics can be transformed into Keynote speeches. Please contact us so that we can tailor a keynote speech that speaks directly to your audience and aligns with your goals!</p>
+                <p class="primary-text-grey">Book your Keyote Address Today <span><a href="#"></a>booking@yolandaavent.com</span> or <span><a href="#">804-316-9096</a></span> </p>
+            </div>
+            <div class="keynote-image">
+                <img src="img/christina-wocintechchat-com-UTw3j_aoIKM-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Coaching Section -->
+<section class="coaching padding-top-6 padding-bottom-4">
+    <div class="container">
+        <!-- <h4 class="tertiary-heading-primary margin-bottom-1">We Want You</h4> -->
+        <h2 class="primary-heading-primary margin-bottom-4">Consultation & Coaching</h2>
+
+        <h3 class="tertiary-heading-primary margin-bottom-2">Initial Consultation Meeting</h3>
+        <p class="primary-text-grey margin-bottom-4">We are only limited by the things that we allow to limit us. The keys to success and productivity are already in our pocket. You just need someone to show you how to unlock the door. We work with our clients to identify their unique needs and offer recommendations for the next steps. It is essential to schedule an initial meeting to provide us with the opportunity to listen to your needs, identify problem areas, and design a plan tailored to your organization. The goals of the initial meeting are to: <span><br>
+        1) To obtain an objective assessment of your organization’s culture and how it’s helping or hindering the achievement of the mission. <br>
+        2) To collect data that will help us identify workplace factors that may be adversely impacting individual and organizational effectiveness. <br>
+        3) To assess education, training and facilitation needs.
+        </span>
+        </p>
+
+        <h3 class="tertiary-heading-primary margin-bottom-2">The Coaching</h3>
+        <p class="primary-text-grey margin-bottom-4">This is a one-on-one session designed to empower you to bring the best version of your authentic self to the table. We will discuss your strengths, areas to build, and goals. Coaching is a valuable tool for individuals at all levels. Let us help you become the best version of YOU! Coaching can include not limited to: <span><br>
+        Goal Planning Session <br>
+        Handling Difficult Conversations
+        <br>
+        Workplace Conflict <br>
+        Developing a Diversity Strategic Plan <br>
+        Leadership Communications - Diversity, Equity, and Inclusion <br>
+        MEET FOR 55 MINUTES
+        </span>
+        </p>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact padding-bottom-8 padding-top-8" id="Contact">
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h4 class="tertiary-heading-primary margin-bottom-1">We'd love to chat with you!</h4>
+                <h2 class="primary-heading-primary margin-bottom-4">Contact Our Team</h2>
+            </div>
+            <div class="contact-box">
+                <form action="">
+                    <div class="contact-box1">
+                        <div class="contact-box1-item">
+                            <h5>First Name*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box2">
+                        <div class="contact-box2-item">
+                            <h5>Phone Number*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                        <div class="contact-box2-item">
+                            <h5>Email*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box3">
+                        <div class="contact-box3-item">
+                            <h5>Message*</h5>
+                            <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div class="contact-box-submit margin-top-2 margin-bottom-2">
+                        <div class="contact-button">
+                            <a href="#" class="btn-tertiary">Submit</a>
+                        </div>
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer" id="Footer">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-box-company">
+                <img src="img/Avent Logos-03.png" alt="" class="margin-bottom-1">
+                <p class="primary-text-grey">Avent Diversity Consulting looks forward to aligning our work to your commitment and efforts to address Diversity, Equity, and Inclusion (DEI) in your organization. Let us know how we can collaborate with your organization!</p>
+                <p>Copyright © 2021 Avent - All rights reserved.</p>
+            </div>
+            <div class="footer-box-links">
+                <h3 class="margin-bottom-1">Site Map</h3>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="services.html"><li>Services</li></a>
+                    <a href="services.html"><li>Training</li></a>
+                    <a href="services.html"><li>Testimonials</li></a>
+                </ul>
+            </div>
+            <div class="footer-box-socials">
+                <h3 class="margin-bottom-1">Social Media</h3>
+                <a href="https://www.instagram.com/blackcoffeenw/"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="https://www.facebook.com/blackcoffeenw/"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="https://twitter.com/coffeenorthwest"><li><i class="fab fa-twitter"></i></li></a>
+            </div>
+            <div class="footer-box-development">
+                <h3 class="margin-bottom-1">Contact Info</h3>
+                <a href="tel:206-439-5787"><li>(111) 222 - 3333</li></a>
+                <a href="mailto:darnesha@blackcoffeenw.com"><li>example@example.com</li></a>
+                <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

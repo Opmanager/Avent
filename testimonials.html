@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------SEO-Optimization---------------- -->
+    <meta name=“description” content="Logo Genius, a Dallas graphic designer in Dallas, Texas.  Offer logo, SEO, social media management, Dallas web design, and web development." />
+    <meta name="keywords" content="Logo Genius, Logo, Genius, Graphic Design, Web Design">
+    <meta name="author" content="Logo Genius">
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="DogpcsIsv8MfOJNDSMVMBvUm1QvIUQ4CYFODmIn3haI"/>
+    <!-- ----------------SEO-Optimization---------------- -->
+
+    <title>Avent | Diversity Consulting LLC</title>
+    <!-- Google Fonts -->
+        <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <!-- Services Header Section -->
+    <!-- <header class="services-header" id="services-header">
+        <div class="container">
+            <div class="services-header-box">
+                <h1 class="primary-heading-white margin-bottom-2">Workshops | Keynotes | Coaching</h1>
+            </div>
+        </div>
+    </header> -->
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/Avent Logos-03.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">list</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="services.html">Services</a>
+                <a class="nav__link" href="events.html">Events</a>
+                <a class="nav__link" href="consultants.html">Consulants</a>
+                <a class="nav__link" href="testimonials.html">Testimonials</a>
+                <a class="btn-primary" href="#Contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 0.9)
+            }, {
+                threshold: 0.9
+            });
+            
+            observer.observe(document.querySelector(".services-header"));
+        });
+        </script>
+
+<!-- Slideshow -->
+<div class="slideshow-container">
+    <div class="slideshow-text">
+        <h2 class="primary-heading-primary margin-bottom-1">Client Testimonials</h2>
+        <h4 class="tertiary-heading-primary margin-bottom-2">Credibilty & Professionalism</h4>
+    </div>
+    <div class="mySlides">
+      <q class="primary-text-grey margin-bottom-1">"Being able to learn about all these issues in a setting that wasn’t set up for argument, but just in a place that allowed us to talk about what everything was and get information. It was more a discussion than a debate which is generally rare right now." </q>
+      <p class="author tertiary-heading-primary">Student, VA Leadership Conference</p>
+    </div>
+    
+    <div class="mySlides">
+      <q class="primary-text-grey margin-bottom-1">"I liked the social identity component of the presentation. I have never deconstructed my identity that much in-depth before."</q>
+      <p class="author tertiary-heading-primary">- VCU Student Leader</p>
+    </div>
+    
+    <div class="mySlides">
+      <q class="primary-text-grey margin-bottom-1">I liked her energy and positive attitude throughout the presentation.  She also did an amazing "job of making it fun and interactive!"</q>
+      <p class="author tertiary-heading-primary">- Teacher, Altoona School District</p>
+    </div>
+
+    <div class="mySlides">
+        <q class="primary-text-grey margin-bottom-1">"Yolanda was awesome! She was interactive, her presentation was bright, informative, and entertaining, and it was just phenomenal how she presented it to us at the SLI. A lot of the terminology that I've heard thrown around was carefully explained in an engaging manner."</q>
+        <p class="author tertiary-heading-primary">-Charlottesville UnMasking Series participant</p>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+<!-- Contact Section -->
+<section class="contact padding-bottom-8 padding-top-8" id="Contact">
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h4 class="tertiary-heading-primary margin-bottom-1">We'd love to chat with you!</h4>
+                <h2 class="primary-heading-primary margin-bottom-4">Contact Our Team</h2>
+            </div>
+            <div class="contact-box">
+                <form action="">
+                    <div class="contact-box1">
+                        <div class="contact-box1-item">
+                            <h5>First Name*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box2">
+                        <div class="contact-box2-item">
+                            <h5>Phone Number*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                        <div class="contact-box2-item">
+                            <h5>Email*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box3">
+                        <div class="contact-box3-item">
+                            <h5>Message*</h5>
+                            <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div class="contact-box-submit margin-top-2 margin-bottom-2">
+                        <div class="contact-button">
+                            <a href="#" class="btn-tertiary">Submit</a>
+                        </div>
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer" id="Footer">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-box-company">
+                <img src="img/Avent Logos-03.png" alt="" class="margin-bottom-1">
+                <p class="primary-text-grey">Avent Diversity Consulting looks forward to aligning our work to your commitment and efforts to address Diversity, Equity, and Inclusion (DEI) in your organization. Let us know how we can collaborate with your organization!</p>
+                <p>Copyright © 2021 Avent - All rights reserved.</p>
+            </div>
+            <div class="footer-box-links">
+                <h3 class="margin-bottom-1">Site Map</h3>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="services.html"><li>Services</li></a>
+                    <a href="services.html"><li>Training</li></a>
+                    <a href="services.html"><li>Testimonials</li></a>
+                </ul>
+            </div>
+            <div class="footer-box-socials">
+                <h3 class="margin-bottom-1">Social Media</h3>
+                <a href="https://www.instagram.com/blackcoffeenw/"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="https://www.facebook.com/blackcoffeenw/"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="https://twitter.com/coffeenorthwest"><li><i class="fab fa-twitter"></i></li></a>
+            </div>
+            <div class="footer-box-development">
+                <h3 class="margin-bottom-1">Contact Info</h3>
+                <a href="tel:206-439-5787"><li>(111) 222 - 3333</li></a>
+                <a href="mailto:darnesha@blackcoffeenw.com"><li>example@example.com</li></a>
+                <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

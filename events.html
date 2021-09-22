@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------SEO-Optimization---------------- -->
+    <meta name=“description” content="Logo Genius, a Dallas graphic designer in Dallas, Texas.  Offer logo, SEO, social media management, Dallas web design, and web development." />
+    <meta name="keywords" content="Logo Genius, Logo, Genius, Graphic Design, Web Design">
+    <meta name="author" content="Logo Genius">
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="DogpcsIsv8MfOJNDSMVMBvUm1QvIUQ4CYFODmIn3haI"/>
+    <!-- ----------------SEO-Optimization---------------- -->
+
+    <title>Avent | Diversity Consulting LLC</title>
+    <!-- Google Fonts -->
+        <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <!-- Services Header Section -->
+    <header class="services-header" id="services-header">
+        <div class="container">
+            <div class="services-header-box">
+                <!-- <h1 class="primary-heading-white margin-bottom-2">Events & Meetings</h1> -->
+                <!-- <p class="primary-text-white margin-bottom-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit suscipit ea saepe iste molestiae, fuga facere labore est distinctio, reprehenderit delectus perspiciatis repellendus possimus sed eum accusamus quas dolorem ipsa?</p> -->
+                <!-- <div class="header-button padding-bottom-4">
+                    <a href="#pricing" class="btn-primary">Explore Events</a>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/Avent Logos-03.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">list</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="services.html">Services</a>
+                <a class="nav__link" href="events.html">Events</a>
+                <a class="nav__link" href="consultants.html">Consulants</a>
+                <a class="nav__link" href="testimonials.html">Testimonials</a>
+                <a class="btn-primary" href="#Contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1)
+            }, {
+                threshold: 1
+            });
+            
+            observer.observe(document.querySelector(".services-header"));
+        });
+        </script>
+
+
+<!-- Event Section -->
+<section class="event padding-bottom-4 padding-top-8">
+    <div class="container">
+        <h4 class="tertiary-heading-primary margin-bottom-1 text-align-center">Event Calendar</h4>
+        <h2 class="primary-heading-primary margin-bottom-4 text-align-center">Our Upcoming Events</h2>
+        <div class="event-box padding-bottom-6">
+            <div class="event-main">
+                <div class="event-card1">
+                    <div class="event-card1-image">
+                        <img src="img/pexels-rodnae-productions-5922674.jpg" alt="">
+                    </div>
+                    <div class="event-card-text">
+                        <div class="event-date margin-bottom-1">
+                            <h3 class="tertiary-heading-white"><span>04</span> August</h3>
+                        </div>
+                        <h5 class="tertiary-heading-primary margin-bottom-1">Event</h5>
+                        <h2 class="primary-heading-primary margin-bottom-2">Diversity, Equity, and Inclusion (DEI) In Your Organization</h2>
+                        <p class="primary-text-grey margin-bottom-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, neque? Molestiae commodi vitae amet unde tempore eum aperiam. Obcaecati, temporibus.</p>
+                        <div class="event-button">
+                            <a href="#" class="secondary-heading-primary">View Event</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-sub">
+
+                <div class="event-card2">
+                    <div class="event-card2-image">
+                        <img src="img/pexels-rodnae-productions-5922674.jpg" alt="">
+                    </div>
+                    <div class="event-card-text">
+                        <div class="event-date margin-bottom-1">
+                            <h3 class="tertiary-heading-white"><span>04</span> August</h3>
+                        </div>
+                        <h5 class="tertiary-heading-primary margin-bottom-1">Event</h5>
+                        <h2 class="primary-heading-primary margin-bottom-2">Diversity, Equity, and Inclusion (DEI) In Your Organization</h2>
+                        <p class="primary-text-grey margin-bottom-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, neque? Molestiae commodi vitae amet unde tempore.</p>
+                        <div class="event-button">
+                            <a href="#" class="secondary-heading-primary">View Event</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card2">
+                    <div class="event-card2-image">
+                        <img src="img/pexels-rodnae-productions-5922674.jpg" alt="">
+                    </div>
+                    <div class="event-card-text">
+                        <div class="event-date margin-bottom-1">
+                            <h3 class="tertiary-heading-white"><span>04</span> August</h3>
+                        </div>
+                        <h5 class="tertiary-heading-primary margin-bottom-1">Event</h5>
+                        <h2 class="primary-heading-primary margin-bottom-2">Diversity, Equity, and Inclusion (DEI) In Your Organization</h2>
+                        <p class="primary-text-grey margin-bottom-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, neque? Molestiae commodi vitae amet unde tempore.</p>
+                        <div class="event-button">
+                            <a href="#" class="secondary-heading-primary">View Event</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="event-button-box padding-bottom-4">
+            <a href="#" class="btn-primary">View All Events</a>
+        </div>
+    </div>
+</section>
+
+<!-- Banner Section -->
+<section class="banner" id="banner">
+    <div class="container">
+        <div class="banner-box">
+            <h4 class="tertiary-heading-primary margin-bottom-1">Newsletter</h4>
+            <h2 class="primary-heading-primary margin-bottom-2">Stay Up To Date</h2>
+            <p class="primary-text-grey margin-bottom-4">Sign up to hear from me about upcoming events and special appearances.</p>
+            <form action="">
+                <div class="banner-item">
+                    <input type="text" name="First Name" id="" class="input" placeholder="Email Address" required>
+                    <input type="submit" value="Sign Up" class="btn-submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Event Section -->
+<section class="event padding-bottom-4 padding-top-8">
+    <div class="container">
+        <h4 class="tertiary-heading-primary margin-bottom-1 text-align-center">Event Calendar</h4>
+        <h2 class="primary-heading-primary margin-bottom-4 text-align-center">Our Upcoming Events</h2>
+        <div class="event-box padding-bottom-6">
+            <div class="event-main">
+                <div class="event-card1">
+                    <div class="event-card1-image">
+                        <img src="img/pexels-rodnae-productions-5922674.jpg" alt="">
+                    </div>
+                    <div class="event-card-text">
+                        <div class="event-date margin-bottom-1">
+                            <h3 class="tertiary-heading-white"><span>04</span> August</h3>
+                        </div>
+                        <h5 class="tertiary-heading-primary margin-bottom-1">Event</h5>
+                        <h2 class="primary-heading-primary margin-bottom-2">Diversity, Equity, and Inclusion (DEI) In Your Organization</h2>
+                        <p class="primary-text-grey margin-bottom-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, neque? Molestiae commodi vitae amet unde tempore eum aperiam. Obcaecati, temporibus.</p>
+                        <div class="event-button">
+                            <a href="#" class="secondary-heading-primary">View Event</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-sub">
+
+                <div class="event-card2">
+                    <div class="event-card2-image">
+                        <img src="img/pexels-rodnae-productions-5922674.jpg" alt="">
+                    </div>
+                    <div class="event-card-text">
+                        <div class="event-date margin-bottom-1">
+                            <h3 class="tertiary-heading-white"><span>04</span> August</h3>
+                        </div>
+                        <h5 class="tertiary-heading-primary margin-bottom-1">Event</h5>
+                        <h2 class="primary-heading-primary margin-bottom-2">Diversity, Equity, and Inclusion (DEI) In Your Organization</h2>
+                        <p class="primary-text-grey margin-bottom-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, neque? Molestiae commodi vitae amet unde tempore.</p>
+                        <div class="event-button">
+                            <a href="#" class="secondary-heading-primary">View Event</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card2">
+                    <div class="event-card2-image">
+                        <img src="img/pexels-rodnae-productions-5922674.jpg" alt="">
+                    </div>
+                    <div class="event-card-text">
+                        <div class="event-date margin-bottom-1">
+                            <h3 class="tertiary-heading-white"><span>04</span> August</h3>
+                        </div>
+                        <h5 class="tertiary-heading-primary margin-bottom-1">Event</h5>
+                        <h2 class="primary-heading-primary margin-bottom-2">Diversity, Equity, and Inclusion (DEI) In Your Organization</h2>
+                        <p class="primary-text-grey margin-bottom-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, neque? Molestiae commodi vitae amet unde tempore.</p>
+                        <div class="event-button">
+                            <a href="#" class="secondary-heading-primary">View Event</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="event-button-box padding-bottom-4">
+            <a href="#" class="btn-primary">View All Events</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact padding-bottom-8 padding-top-8" id="Contact">
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h4 class="tertiary-heading-primary margin-bottom-1">We'd love to chat with you!</h4>
+                <h2 class="primary-heading-primary margin-bottom-4">Contact Our Team</h2>
+            </div>
+            <div class="contact-box">
+                <form action="">
+                    <div class="contact-box1">
+                        <div class="contact-box1-item">
+                            <h5>First Name*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box2">
+                        <div class="contact-box2-item">
+                            <h5>Phone Number*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                        <div class="contact-box2-item">
+                            <h5>Email*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box3">
+                        <div class="contact-box3-item">
+                            <h5>Message*</h5>
+                            <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div class="contact-box-submit margin-top-2 margin-bottom-2">
+                        <div class="contact-button">
+                            <a href="#" class="btn-tertiary">Submit</a>
+                        </div>
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer" id="Footer">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-box-company">
+                <img src="img/Avent Logos-03.png" alt="" class="margin-bottom-1">
+                <p class="primary-text-grey">Avent Diversity Consulting looks forward to aligning our work to your commitment and efforts to address Diversity, Equity, and Inclusion (DEI) in your organization. Let us know how we can collaborate with your organization!</p>
+                <p>Copyright © 2021 Avent - All rights reserved.</p>
+            </div>
+            <div class="footer-box-links">
+                <h3 class="margin-bottom-1">Site Map</h3>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="services.html"><li>Services</li></a>
+                    <a href="services.html"><li>Training</li></a>
+                    <a href="services.html"><li>Testimonials</li></a>
+                </ul>
+            </div>
+            <div class="footer-box-socials">
+                <h3 class="margin-bottom-1">Social Media</h3>
+                <a href="https://www.instagram.com/blackcoffeenw/"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="https://www.facebook.com/blackcoffeenw/"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="https://twitter.com/coffeenorthwest"><li><i class="fab fa-twitter"></i></li></a>
+            </div>
+            <div class="footer-box-development">
+                <h3 class="margin-bottom-1">Contact Info</h3>
+                <a href="tel:206-439-5787"><li>(111) 222 - 3333</li></a>
+                <a href="mailto:darnesha@blackcoffeenw.com"><li>example@example.com</li></a>
+                <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
