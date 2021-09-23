@@ -87,7 +87,7 @@ body {
 }
 
 .header-box h4 {
-    color: var(--color-primary);
+    color: var(--color-white);
     text-align: left;
     font-size: 2rem;
 }
