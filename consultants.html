@@ -5,29 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ----------------SEO-Optimization---------------- -->
-    <meta name=“description” content="Logo Genius, a Dallas graphic designer in Dallas, Texas.  Offer logo, SEO, social media management, Dallas web design, and web development." />
-    <meta name="keywords" content="Logo Genius, Logo, Genius, Graphic Design, Web Design">
-    <meta name="author" content="Logo Genius">
+    <meta name=“description” content="Avent Diversity Consulting LLC addresses Diversity, Equity, and Inclusion (DEI) in your organization." />
+    <meta name="keywords" content="Avent Diversity Consulting, Avent, Diversity, Consulting">
+    <meta name="author" content="Avent Diversity Consulting LLC">
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="DogpcsIsv8MfOJNDSMVMBvUm1QvIUQ4CYFODmIn3haI"/>
     <!-- ----------------SEO-Optimization---------------- -->
-
     <title>Avent | Diversity Consulting LLC</title>
     <!-- Google Fonts -->
-        <!-- Poppins -->
+    <!-- Playfair Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Google Material Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
-
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/components.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 
@@ -35,7 +38,7 @@
     <header class="services-header" id="services-header">
         <div class="container">
             <div class="services-header-box">
-                <h1 class="primary-heading-white margin-bottom-2">Our Consultants</h1>
+                <!-- <h1 class="primary-heading-white margin-bottom-2">Our Consultants</h1> -->
                 <!-- <p class="primary-text-white margin-bottom-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit suscipit ea saepe iste molestiae, fuga facere labore est distinctio, reprehenderit delectus perspiciatis repellendus possimus sed eum accusamus quas dolorem ipsa?</p> -->
                 <!-- <div class="header-button padding-bottom-4">
                     <a href="#pricing" class="btn-primary">Explore Events</a>
@@ -71,16 +74,16 @@
                 threshold: 1
             });
             
-            observer.observe(document.querySelector(".services-header"));
+            observer.observe(document.querySelector(".consultants-header"));
         });
         </script>
 
 <!-- Team Section -->
 <section class="team padding-bottom-6 padding-top-8">
     <div class="container">
-        <h4 class="tertiary-heading-primary margin-bottom-1">Our Consulting Team</h4>
-        <h2 class="primary-heading-primary margin-bottom-2">Meet Our Consultants</h2>
-        <p class="primary-text-grey margin-bottom-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, temporibus velit? Expedita, nobis. Aperiam, dicta eos reiciendis.</p>
+        <h4 class="tertiary-heading-primary margin-bottom-1 text-align-center">Our Consulting Team</h4>
+        <h2 class="primary-heading-primary margin-bottom-6 text-align-center">Meet Our Consultants</h2>
+        <!-- <p class="primary-text-grey margin-bottom-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, temporibus velit? Expedita, nobis. Aperiam, dicta eos reiciendis.</p> -->
         <div class="team-box padding-bottom-8">
 
             <div class="team-card margin-bottom-4">
@@ -88,27 +91,9 @@
                     <img src="img/Dr. Reginald.jpg" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Dr. Reginald Stroble | Consultant</h3>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Dr. Reginald Stroble | Consultant</h3>
                     <p class="primary-text-grey margin-bottom-2">Dr. Reginald Stroble is a diversity and inclusion practitioner who strongly advocates for social justice & marginalized populations through <span id="dots">...</span><span id="more"> advocacy,program implementation, workshop facilitation, and advising. Reggie specializes in creating student success initiatives for African American males & females while building strategic partnerships to enhance the appreciation of diversity and support initiatives for all underserved/ underrepresented groups.In his previous role, he served as Associate Director of Multicultural Affairs at James Madison University (JMU). He was responsible for graduate student and professional staff recruitment, hiring, and onboarding procedures. Also, he was responsible for developing designing, maintaining, and providing student leadership development opportunities for 30 or more student organizations.Prior to his role at JMU he served as Assistant Director for Multicultural Student Affairs at Virginia Commonwealth University (VCU).</span></p>
                     <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
                 </div>
             </div>
 
@@ -117,27 +102,9 @@
                     <img src="img/Yolanda.jpg" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Yolonda Edmond | Operations Manager</h3>
-                    <p class="primary-text-grey margin-bottom-2">Yolonda Edmond obtained her Bachelor of  Business Administration degree from Averett University. She has nearly a decade of experience <span id="dots">...</span><span id="more"> working in the mental health field as a Mental Health Support Specialist and as a Quality Assurance specialist for non-profit and private agencies.  She has aided and supported a diverse population of individuals with mental health and intellectual disabilities. Yolonda has provided social-inclusion for the individuals and their families with planning, developing, and implementing goal-oriented therapeutic services. She has supplied case management, conflict- resolution, and crisis management for those she serviced. Yolonda enjoys assisting others reach their aspirations in all aspects of life.</span></p>
-                    <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Yolonda Edmond | Operations Manager</h3>
+                    <p class="primary-text-grey margin-bottom-2">Yolonda Edmond obtained her Bachelor of  Business Administration degree from Averett University. She has nearly a decade of experience <span id="dots2">...</span><span id="more2"> working in the mental health field as a Mental Health Support Specialist and as a Quality Assurance specialist for non-profit and private agencies.  She has aided and supported a diverse population of individuals with mental health and intellectual disabilities. Yolonda has provided social-inclusion for the individuals and their families with planning, developing, and implementing goal-oriented therapeutic services. She has supplied case management, conflict- resolution, and crisis management for those she serviced. Yolonda enjoys assisting others reach their aspirations in all aspects of life.</span></p>
+                    <a onclick="myFunction2()" id="myBtn2" class="primary-text-grey">Read more</a>
                 </div>
             </div>
 
@@ -146,27 +113,9 @@
                     <img src="img/Robin Reese.jpg" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Robin Reese | <br> Consultant</h3>
-                    <p class="primary-text-grey margin-bottom-2">Robin Reese (she/her/they) is a playwright and educator based in Pennsylvania. Her work explores the relationships between identity, power, resistance <span id="dots">...</span><span id="more"> and inclusion. As an associate professor at Pennsylvania State University/Altoona College, she focuses on multicultural theatre, African American theatre history, Hip Hop Theatre, and acting, including Black Acting Methods. She has won awards for her plays and been produced in New York City and in regional theatres. In addition to theatre arts, she has been educating in social justice and anti-racism work, moderates white affinity groups and has a background in victim-witness advocacy and fundraising and board development for a variety of non-profits, including victim services. Her work also includes rape trauma and interracial adoption. Robin completed her M.F.A. in 1999 at The New School University/Actors Studio Drama School with a focus on acting, directing and education.</span></p>
-                    <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Robin Reese | <br> Consultant</h3>
+                    <p class="primary-text-grey margin-bottom-2">Robin Reese (she/her/they) is a playwright and educator based in Pennsylvania. Her work explores the relationships between identity, power, resistance <span id="dots3">...</span><span id="more3"> and inclusion. As an associate professor at Pennsylvania State University/Altoona College, she focuses on multicultural theatre, African American theatre history, Hip Hop Theatre, and acting, including Black Acting Methods. She has won awards for her plays and been produced in New York City and in regional theatres. In addition to theatre arts, she has been educating in social justice and anti-racism work, moderates white affinity groups and has a background in victim-witness advocacy and fundraising and board development for a variety of non-profits, including victim services. Her work also includes rape trauma and interracial adoption. Robin completed her M.F.A. in 1999 at The New School University/Actors Studio Drama School with a focus on acting, directing and education.</span></p>
+                    <a onclick="myFunction3()" id="myBtn3" class="primary-text-grey">Read more</a>
                 </div>
             </div>
 
@@ -175,27 +124,9 @@
                     <img src="img/Kathy Avent.jpg" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Kathy Avent | Consultant</h3>
-                    <p class="primary-text-grey margin-bottom-2">Kathy Avent has 27 years of risk management and claims handling experience in both liability and workers compensation. Kathy has over  <span id="dots">...</span><span id="more"> 10 years of experience promoting workplace diversity, equity and inclusion and is a U.S Army military veteran. She uses the platform of inclusion as a business practice. Kathy specializes in economic diversity through risk management. She has  experience in both commercial and personal lines insurance. Kathy has litigation experience, and has managed claims with significant exposures. Her experience includes: general liability, commercial liability, personal liability, products liability, commercial property, commercial and personal auto, public entities and homeowner claims.  She received both her undergraduate and masters degree from Averett University in Business Administration. She is a licensed senior account claims representative. </span></p>
-                    <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Kathy Avent | Consultant</h3>
+                    <p class="primary-text-grey margin-bottom-2">Kathy Avent has 27 years of risk management and claims handling experience in both liability and workers compensation. Kathy has over  <span id="dots4">...</span><span id="more4"> 10 years of experience promoting workplace diversity, equity and inclusion and is a U.S Army military veteran. She uses the platform of inclusion as a business practice. Kathy specializes in economic diversity through risk management. She has  experience in both commercial and personal lines insurance. Kathy has litigation experience, and has managed claims with significant exposures. Her experience includes: general liability, commercial liability, personal liability, products liability, commercial property, commercial and personal auto, public entities and homeowner claims.  She received both her undergraduate and masters degree from Averett University in Business Administration. She is a licensed senior account claims representative. </span></p>
+                    <a onclick="myFunction4()" id="myBtn4" class="primary-text-grey">Read more</a>
                 </div>
             </div>
 
@@ -204,27 +135,9 @@
                     <img src="img/Jenae.jpg" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Jenae Harrington | Consultant</h3>
-                    <p class="primary-text-grey margin-bottom-2">Jenaé Harrington is a Diversity, Equity, and Inclusion thought leader with over 10 years of experience in the field. As an innovator and executor, she has <span id="dots">...</span><span id="more"> implemented countless programs and initiatives to amplify the voices of marginalized people. She also serves as an advocate and advisor to underrepresented populations, primarily in the higher education sector. She champions creative problem solving to address organizational challenges and is committed to facilitating change through inclusive leadership and intergroup relations. Her professional roles and experiences have integrated diversity education and training, leadership development, and project management. She currently serves as a Student Affairs practitioner who empowers young leaders to maximize their potential, build community, and facilitate change. Jenaé received a Bachelor of Arts in Political Science from Hampton University, a Master of Urban & Regional Planning from Virginia Commonwealth University, and is currently pursuing an Ed.D. in Leadership.</span></p>
-                    <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Jenae Harrington | Consultant</h3>
+                    <p class="primary-text-grey margin-bottom-2">Jenaé Harrington is a Diversity, Equity, and Inclusion thought leader with over 10 years of experience in the field. As an innovator and executor, she has <span id="dots5">...</span><span id="more5"> implemented countless programs and initiatives to amplify the voices of marginalized people. She also serves as an advocate and advisor to underrepresented populations, primarily in the higher education sector. She champions creative problem solving to address organizational challenges and is committed to facilitating change through inclusive leadership and intergroup relations. Her professional roles and experiences have integrated diversity education and training, leadership development, and project management. She currently serves as a Student Affairs practitioner who empowers young leaders to maximize their potential, build community, and facilitate change. Jenaé received a Bachelor of Arts in Political Science from Hampton University, a Master of Urban & Regional Planning from Virginia Commonwealth University, and is currently pursuing an Ed.D. in Leadership.</span></p>
+                    <a onclick="myFunction5()" id="myBtn5" class="primary-text-grey">Read more</a>
                 </div>
             </div>
 
@@ -233,27 +146,9 @@
                     <img src="img/Dr. Brandy.jpg" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Dr. Brandy Huderson | Consultant</h3>
-                    <p class="primary-text-grey margin-bottom-2">Dr. Brandy Huderson is a STEM educator with extensive experience in higher education instruction, scientific research, informal STEM education programming <span id="dots">...</span><span id="more"> , project management, qualitative and quantitative portfolio analysis, program evaluation, and federal grant management. She completed her undergraduate studies at Xavier University of Louisiana (New Orleans, LA) receiving a bachelor’s degree in Biology. From there Dr. Huderson earned a Master’s of Biological Sciences degree with concentrations in Molecular Genetics from the University of New Orleans (LA). Dr. Huderson joined the Dairy Science Department at Virginia Tech (Blacksburg, VA) where her dissertation research focused on mammary gland development in pre-pubertal Holstein calves. Dr. Huderson completed two cancer biology postdoctoral fellowships at Tulane University School of Medicine (New Orleans, LA) and Georgetown University’s Lombardi Comprehensive Cancer Center (Washington, DC). Dr. Huderson is an Assistant Professor at the University of the District of Columbia in our nation’s capital. Dr. Huderson’s research program focuses on steroid receptor biology, in normal and abhorrent systems, as well as STEM Education.Dr. Huderson is currently an American Association for the Advancement of Science (AAAS) Science and Technology Policy Fellow (STPF) at the National Science Foundation (NSF) in the Directorate for Education and Human Development (EHR).  As a fellow, Dr. Huderson uses her expertise in STEM education and research to support the Division of Research on Learning in Formal and Informal Setting’s (DRL) Advancing Informal STEM Learning (AISL) program. Specifically, she used her experience and knowledge gained from academia to conduct qualitative and quantitative portfolio analysis and program evaluation. In addition to abstracts, presentations, and publications related to her research program, Dr. Huderson has also published two book chapters examining STEM-related environments for public school students and African American women, Urban STEM Education: A Vehicle for Broadening Participation in STEM (Huderson and Huderson, 2019) and Societal Factors and Workplace Perceptions: Understanding Social Determinants of Professional STEM Achievement and Persistence for Black Women (Huderson and Huderson, 2019)</span></p>
-                    <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Dr. Brandy Huderson | Consultant</h3>
+                    <p class="primary-text-grey margin-bottom-2">Dr. Brandy Huderson is a STEM educator with extensive experience in higher education instruction, scientific research, informal STEM education programming <span id="dots6">...</span><span id="more6"> , project management, qualitative and quantitative portfolio analysis, program evaluation, and federal grant management. She completed her undergraduate studies at Xavier University of Louisiana (New Orleans, LA) receiving a bachelor’s degree in Biology. From there Dr. Huderson earned a Master’s of Biological Sciences degree with concentrations in Molecular Genetics from the University of New Orleans (LA). Dr. Huderson joined the Dairy Science Department at Virginia Tech (Blacksburg, VA) where her dissertation research focused on mammary gland development in pre-pubertal Holstein calves. Dr. Huderson completed two cancer biology postdoctoral fellowships at Tulane University School of Medicine (New Orleans, LA) and Georgetown University’s Lombardi Comprehensive Cancer Center (Washington, DC). Dr. Huderson is an Assistant Professor at the University of the District of Columbia in our nation’s capital. Dr. Huderson’s research program focuses on steroid receptor biology, in normal and abhorrent systems, as well as STEM Education.Dr. Huderson is currently an American Association for the Advancement of Science (AAAS) Science and Technology Policy Fellow (STPF) at the National Science Foundation (NSF) in the Directorate for Education and Human Development (EHR).  As a fellow, Dr. Huderson uses her expertise in STEM education and research to support the Division of Research on Learning in Formal and Informal Setting’s (DRL) Advancing Informal STEM Learning (AISL) program. Specifically, she used her experience and knowledge gained from academia to conduct qualitative and quantitative portfolio analysis and program evaluation. In addition to abstracts, presentations, and publications related to her research program, Dr. Huderson has also published two book chapters examining STEM-related environments for public school students and African American women, Urban STEM Education: A Vehicle for Broadening Participation in STEM (Huderson and Huderson, 2019) and Societal Factors and Workplace Perceptions: Understanding Social Determinants of Professional STEM Achievement and Persistence for Black Women (Huderson and Huderson, 2019)</span></p>
+                    <a onclick="myFunction6()" id="myBtn6" class="primary-text-grey">Read more</a>
                 </div>
             </div>
 
@@ -262,172 +157,65 @@
                     <img src="img/Dr. Jeanine.jpg" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Dr. Jeanine Molock | Senior Data Analyst</h3>
-                    <p class="primary-text-grey margin-bottom-2"> Dr. Jeanine W. Molock, an education research and policy expert and organizational change agent, has extensive experience in strategic planning <span id="dots">...</span><span id="more"> strategic planning and assessment; policy design, implementation and evaluation; quantitative and qualitative research and analysis; project management; coaching and professional development, and organizational quality assurance. She has been employed with the City University of New York (CUNY) since January 2018. Currently Dr. Molock serves as the Director for Institutional Research at the CUNY School of Professional Studies. Dr. Molock is responsible for providing leadership and direction in the design, prioritization and implementation of institutional research and assessment activities. Additionally, she helps to determine primary benchmarks, performance indicators and measures of success which assist her with planning, leading and conducting data collection and analysis activities that support institutional effectiveness and planning. Dr. Molock also provides guidance for the review, development and implementation of the College’s research-based survey designs that assist faculty and staff with developing surveys that provide direct evidence of student learning. Dr. Molock serves outside her college as a member of both the City University of New York’s Institutional Research and Assessment Councils and is serving as a co-chairperson of the Assessment Council. In addition to her contributions to the field of primary, secondary and higher education, Dr. Molock achieved early career success in the field of engineering. Upon completing her undergraduate studies, Dr. Molock worked several years as Mechanical Engineer for a large technology company where she served as a Design Engineer and as a Product Marketing Engineer within the company’s Research and Development and Marketing departments. Dr. Molock received a Ph.D. and a M.A. from The University of Delaware (College of Human Services, Education and Public Policy), where she majored in Measurement, Statistics and Evaluation, and minored in Educational Policy.  She earned her B.S. from Cornell University (Sibley School of Mechanical and Aerospace Engineering), where she majored in Mechanical Engineering. </span></p>
-                    <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Dr. Jeanine Molock | Senior Data Analyst</h3>
+                    <p class="primary-text-grey margin-bottom-2"> Dr. Jeanine W. Molock, an education research and policy expert and organizational change agent, has extensive experience in strategic planning <span id="dots7">...</span><span id="more7"> strategic planning and assessment; policy design, implementation and evaluation; quantitative and qualitative research and analysis; project management; coaching and professional development, and organizational quality assurance. She has been employed with the City University of New York (CUNY) since January 2018. Currently Dr. Molock serves as the Director for Institutional Research at the CUNY School of Professional Studies. Dr. Molock is responsible for providing leadership and direction in the design, prioritization and implementation of institutional research and assessment activities. Additionally, she helps to determine primary benchmarks, performance indicators and measures of success which assist her with planning, leading and conducting data collection and analysis activities that support institutional effectiveness and planning. Dr. Molock also provides guidance for the review, development and implementation of the College’s research-based survey designs that assist faculty and staff with developing surveys that provide direct evidence of student learning. Dr. Molock serves outside her college as a member of both the City University of New York’s Institutional Research and Assessment Councils and is serving as a co-chairperson of the Assessment Council. In addition to her contributions to the field of primary, secondary and higher education, Dr. Molock achieved early career success in the field of engineering. Upon completing her undergraduate studies, Dr. Molock worked several years as Mechanical Engineer for a large technology company where she served as a Design Engineer and as a Product Marketing Engineer within the company’s Research and Development and Marketing departments. Dr. Molock received a Ph.D. and a M.A. from The University of Delaware (College of Human Services, Education and Public Policy), where she majored in Measurement, Statistics and Evaluation, and minored in Educational Policy.  She earned her B.S. from Cornell University (Sibley School of Mechanical and Aerospace Engineering), where she majored in Mechanical Engineering. </span></p>
+                    <a onclick="myFunction7()" id="myBtn7" class="primary-text-grey">Read more</a>
                 </div>
             </div>
 
             <div class="team-card margin-bottom-4">
                 <div class="team-card-image">
-                    <img src="img/Dr. Jennifer Brown.jpg" alt="consultant">
+                    <img src="img/Yancey_Laurica-01.png" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Dr. Jennifer Brown | Consultant</h3>
-                    <p class="primary-text-grey margin-bottom-2"> Coming Soon! <span id="dots">...</span><span id="more"> </span></p>
-                    <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Laurica Yancey | Consultant</h3>
+                    <p class="primary-text-grey margin-bottom-2">Laurica Yancey has over 20 years of experience in the Higher Education industry. Her work in higher education includes: Career Development, <span id="dots8">...</span><span id="more8">Student Accessibility, Housing and Residence Life, Student Conduct, and as an Instructor. As a higher education practitioner, she has intentionally and consistently represented the principles of diversity, equity, and inclusion. She is a Strengths Coach and specializes in the diversity of Strengths. Laurica is an ordained Minister and is the CEO and founder of a ministry training program. She implements the fundamentals of diversity, equity, and inclusion as a ministry standard. She also specializes in assisting churches and ministries in incorporating diversity, equity, and inclusion in their leadership training curriculums. Laurica is currently working on her doctorate at Grand Canyon University. Her research for her dissertation is focused on mentoring strategies for African American women in higher education by African American women in higher education leadership. She is slated to defend her dissertation in May 2021. She received a Master of Legal Studies from West Virginia University. She received a Master of Public Administration from Appalachian State University. She received a Bachelor of Arts in Government from Campbell University.</span></p>
+                    <a onclick="myFunction8()" id="myBtn8" class="primary-text-grey">Read more</a>
                 </div>
             </div>
 
             <div class="team-card margin-bottom-4">
                 <div class="team-card-image">
-                    <img src="img/Avent Logos-03.png" alt="consultant">
+                    <img src="img/RDJ.JPG" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Laurica Yancey | Consultant</h3>
-                    <p class="primary-text-grey margin-bottom-2"> Coming Soon! <span id="dots">...</span><span id="more"> </span></p>
-                    <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Rachel DeSoto-Jackson | Consultant</h3>
+                    <p class="primary-text-grey margin-bottom-2">Rachel DeSoto-Jackson is a Latinx educator, DEI facilitator, and executive leader with over 10 years of experience in higher education and community <span id="dots9">...</span><span id="more9">organizations. In her current role, she is an Associate Professor of Applied Theatre at Indiana University of Pennsylvania where she also serves as Director of the Center for Teaching Excellence. Rachel has developed and facilitated workshops, presentations, and course designs on various applications of Applied Theatre and its interdisciplinary use in building empathetic communication and diversity, equity, and inclusion practices within community, corporate, and classroom settings. She is a grant recipient for her research in empathy and simulation performance. In 2020 she received the Association for Theatre in Higher Education and Kennedy Center American College Theatre Award for Innovative Teaching for her use of diversity and inclusion practices in higher education pedagogy. She currently leads the Pedagogy and Theatre of the Oppressed international organization as the Co-President and serves on the editorial review board of the organization’s journal. Her work expands to partnerships with the Smithsonian Latino Center and serving on the steering committee for the Latinx Theatre Commons. Her recent publication includes the book chapter “A Process-Oriented Approach in Applied Theatre Programming with Youth” in Applied Theatre: Working with Youth (2021) edited by Lisa Brenner, Chris Ceraso, and Evelyn Diaz. Rachel received an MFA in Performance in Pedagogy with a specialization in Theatre of the Oppressed from the University of Pittsburgh along with an MA in Theatre and Performance Studies, and MA Certificate in Film Studies.</span></p>
+                    <a onclick="myFunction9()" id="myBtn9" class="primary-text-grey">Read more</a>
                 </div>
             </div>
 
             <div class="team-card margin-bottom-4">
                 <div class="team-card-image">
-                    <img src="img/Avent Logos-03.png" alt="consultant">
+                    <img src="img/Nabra-Nelson-01.png" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Mikala Avent | College Intern</h3>
-                    <p class="primary-text-grey margin-bottom-2"> Coming Soon! <span id="dots">...</span><span id="more"> </span></p>
-                    <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Nabra Nelson | Consultant</h3>
+                    <p class="primary-text-grey margin-bottom-2">Nabra Nelson is a community organizer and theater creator from Egypt, Nubia, and California. As a consultant, administrator, playwright, director, <span id="dots10">...</span><span id="more10">dramaturg, and teaching artist, she has worked with theaters, universities, and community organizations across the nation to strengthen community and amplify under-heard voices. She is a founding company member of the Seattle-based Arab theater company, Dunya Productions, a founding company member of the Milwaukee-based womxn-of-color performance troupe Heard Space Arts Collective, leads the Nubian Foundation for Preserving a Cultural Heritage, and is the co-host of the podcast Kunafa & Shay (produced by HowlRound Theatre Commons). She is also the Director of Arts Engagement at Seattle Rep, and a graduate of the University of California, Santa Barbara.</span></p>
+                    <a onclick="myFunction10()" id="myBtn10" class="primary-text-grey">Read more</a>
                 </div>
             </div>
 
             <div class="team-card margin-bottom-4">
                 <div class="team-card-image">
-                    <img src="img/Avent Logos-03.png" alt="consultant">
+                    <img src="img/christine-bruno-01.png" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Michael Avent | ADC Intern</h3>
-                    <p class="primary-text-grey margin-bottom-2"> Coming Soon! <span id="dots">...</span><span id="more"> </span></p>
-                    <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Christine Bruno | AEA/SAG-AFTRA</h3>
+                    <p class="primary-text-grey margin-bottom-2">Christine Bruno (AEA / SAG-AFTRA) is an award-winning actor, director,
+                        teaching artist, and disability inclusion consultant for the entertainment industry, <span id="dots11">...</span><span id="more11"> universities, theatre festivals, nonprofit and for-profit companies and organizations across the globe. She received her MFA in Acting and directing from the New School and is a lifetime member of The Actors Studio; a company member of Theatre Breaking Through Barriers, New Jersey Rep, and Emerging Artists Theatre; sits on the Advisory Boards of National Disability Theatre and Queens Theatre’s TFA program and is a member of the Leadership Council of New York Shakespeare Exchange. Christine is a teaching artist for Queens Theatre’s TFA program, Epic Players, and NYC Kids Project. She has appeared in productions across the U.S. and internationally and in May, will voice the roles of Gonzalo and Trinculo in Resounding LLC’s live, immersive audio adaptation of Shakespeare’s The Tempest. In 2019, Christine starred in the world premiere of Bekah Brunstetter's Public Servant Off-Broadway. Her TV and film credits include CBS's God Friended Me, NBC's Law & Order, ABLE: A Series and the upcoming independent features, Best Summer Ever and Hungry. Christine is a Princess Grace Award nominee and a recipient of an Artist Relief Grant from the Center for Cultural Power. Christine sits on the NY Local Board of SAG-AFTRA, is Chair of the NY SAG-AFTRA Performers with Disabilities (PWD) Committee, serves on the SAG-AFTRA National PWD and Actors’ Equity EEOC Committees, is a founding member of the Disability Cohort of Time’s Up’s 5050by2020. www.BrunoDisabilityInclusion.com</span></p>
+                    <a onclick="myFunction11()" id="myBtn11" class="primary-text-grey">Read more</a>
                 </div>
             </div>
 
             <div class="team-card margin-bottom-4">
                 <div class="team-card-image">
-                    <img src="img/Avent Logos-03.png" alt="consultant">
+                    <img src="img/dev-h-01.png" alt="consultant">
                 </div>
                 <div class="team-card-text">
-                    <h3 class="tertiary-heading-primary margin-bottom-1">Consultant Vacancy</h3>
-                    <p class="primary-text-grey margin-bottom-2"> Coming Soon! <span id="dots">...</span><span id="more"> </span></p>
-                    <a onclick="myFunction()" id="myBtn" class="primary-text-grey">Read more</a>
-
-                    <script>
-                    function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                        dots.style.display = "inline";
-                        btnText.innerHTML = "Read more"; 
-                        moreText.style.display = "none";
-                    } else {
-                        dots.style.display = "none";
-                        btnText.innerHTML = "Read less"; 
-                        moreText.style.display = "inline";
-                    }
-                    }
-                    </script>
+                    <h3 class="tertiary-heading-primary margin-bottom-2">Dev Hayostek | Consultant</h3>
+                    <p class="primary-text-grey margin-bottom-2"> Dev Hayostek (He/They) holds a Bachelor’s Degree in Integrative Arts from The Pennsylvania State University/Altoona College. His focus was <span id="dots12">...</span><span id="more12">Theatre, Music, and Dance. Upon graduation, Dev was highly active in the Retail Management field working in various positions of Leadership with a strong focus on Recruitment, Onboarding, Training, and Development. Currently, Dev is pursuing a Master of Social Work degree from the University Of Pittsburgh. His specialty track is Community, Organization, and Social Action with a graduate certificate in Human Services Management. Dev identifies as Queer and is Dev identifies as Queer and is very passionate about fighting for Equity and Justice for Queer people of every identity. Dev is passionate about actively being antiracist, harm reduction, community healing/mutual aid, body neutrality/anti-diet culture, and believes that “it’s not about me, it’s about the people getting less than they deserve”.</span></p>
+                    <a onclick="myFunction12()" id="myBtn12" class="primary-text-grey">Read more</a>
                 </div>
             </div>
             
@@ -500,19 +288,23 @@
             </div>
             <div class="footer-box-socials">
                 <h3 class="margin-bottom-1">Social Media</h3>
-                <a href="#"><li><i class="fab fa-instagram"></i></li></a>
-                <a href="#"><li><i class="fab fa-facebook-f"></i></li></a>
-                <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+                <a href="https://www.instagram.com/aventdiversityconsulting/?utm_medium=copy_link" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="https://www.facebook.com/Avent-Diversity-Consulting-105146631249195/" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="https://www.linkedin.com/company/aventdiversityconsulting
+                https://www.linkedin.com/company/aventdiversityconsulting" target="_blank"><li><i class="fab fa-linkedin"></i></li></a>
             </div>
             <div class="footer-box-development">
                 <h3 class="margin-bottom-1">Contact Info</h3>
                 <a href="tel:804-316-9096"><li>(804) 316 - 9096</li></a>
-                <a href="mailto:darnesha@blackcoffeenw.com"><li>example@example.com</li></a>
+                <a href="mailto:ylavent@gmail.com"><li>ylavent@gmail.com</li></a>
                 <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Javascript -->
+<script src="main.js"></script>
 
 </body>
 </html>

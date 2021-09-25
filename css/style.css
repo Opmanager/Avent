@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .container {
@@ -84,6 +84,7 @@ body {
 
 .header-box h1 {
     font-size: 5rem;
+    text-transform: uppercase;
 }
 
 .header-box h4 {
@@ -100,13 +101,17 @@ body {
 /* Services Header Section */
 .services-header {
     height: 50vh;
-    background: url(../img/lagos-techie-IgUR1iX0mqM-unsplash.jpg);
+    background: url(../img/christina-wocintechchat-com-UTw3j_aoIKM-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
+    justify-content: center;
     align-items: center;
+    z-index: 4;
     padding-top: var(--bar-height);
     box-sizing: border-box;
-    background-size: cover;
-    z-index: 4;
     position: relative;
 }
 
@@ -130,6 +135,80 @@ body {
     max-width: 1000px;
 }
 
+/* Events Header Section */
+.events-header {
+    height: 50vh;
+    background: url(../img/lagos-techie-IgUR1iX0mqM-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    padding-top: var(--bar-height);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.events-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+.events-header-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    max-width: 1000px;
+}
+
+/* Consultants Header Section */
+.consultants-header {
+    height: 50vh;
+    /* background: url(../img/christina-wocintechchat-com-UTw3j_aoIKM-unsplash.jpg); */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    padding-top: var(--bar-height);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.consultants-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+.consultants-header-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    max-width: 1000px;
+}
+
 /* Bar */
 .bar {
     position: fixed;
@@ -140,6 +219,7 @@ body {
     height: var(--bar-height);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
     transition: background 0.15s;
+    background: #dfdede;
 }
 
 .bar--bg {
@@ -323,37 +403,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 4rem;
 }
 
 .event-main {
-    flex-basis: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.event-card1 {
+.event-card {
     border-radius: 0px;
     background-color: var(--color-white);
     box-shadow: 0 .75rem .75rem rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45rem;
-    height: 66rem;
+    width: 40rem;
+    height: auto;
     margin: 0 2rem;
-}
-
-.event-card2 {
-    border-radius: 0px;
-    background-color: var(--color-white);
-    box-shadow: 0 .75rem .75rem rgba(0, 0, 0, 0.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70rem;
-    height: 32rem;
-    margin: 2rem 0;
 }
 
 .event-card1-image img {
@@ -361,13 +429,6 @@ body {
     height: auto;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-}
-
-.event-card2-image img {
-    width: 16rem;
-    height: 32rem;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
 }
 
 .event-card-text {
@@ -391,6 +452,11 @@ body {
     font-size: 1.25rem;
     font-style: italic;
     text-transform: uppercase;
+    transition: .3s all;
+}
+
+.event-card-text a:hover {
+    color: var(--color-secondary);
 }
 
 .event-date {
@@ -412,10 +478,6 @@ body {
 .event-date h3 {
     font-size: .75rem;
     line-height: 1.2;
-}
-
-.event-sub {
-    flex-basis: 50%;
 }
 
 .event-button-box {
@@ -467,7 +529,7 @@ body {
 
 .team-card-image img{
     width: 100%;
-    height: 28rem;
+    height: auto;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
@@ -520,93 +582,48 @@ body {
     display: none;
 }
 
-/* Mission Section */
-.mission {
-    background: var(--color-light-grey);
-    /* background: #fff7ed; */
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#more2 {
+    display: none;
 }
 
-.mission h4 {
-    color: var(--color-third);
+#more3 {
+    display: none;
 }
 
-.mission-box {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 4rem;
+#more4 {
+    display: none;
 }
 
-.mission-text {
-    flex-basis: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+#more5 {
+    display: none;
 }
 
-.mission-text img {
-    width: 20px;
-    height: auto;
+#more6 {
+    display: none;
 }
 
-.mission-text h2 {
-    font-size: 6rem;
+#more7 {
+    display: none;
 }
 
-.mission-item {
-    display: flex;
-    align-items: center;
+#more8 {
+    display: none;
 }
 
-.mission-item img {
-    width: 15px;
-    height: auto;
-    margin-right: 2rem;
+#more9 {
+    display: none;
 }
 
-.mission-item h5 {
-    /* font-family: 'Varela Round', sans-serif; */
-    font-size: 1.5rem;
-    color: var(--color-third);
+#more10 {
+    display: none;
 }
 
-.mission-image {
-    flex-basis: 65%;
-    display: flex;
-    justify-content: space-evenly;
+#more11 {
+    display: none;
 }
 
-.mission-image-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mission-image-box h4 {
-    font-size: 4rem;
-}
-
-.mission-image-box h3 {
-    color: var(--color-third);
-}
-
-.mission-image-icon {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 100%;
-    background: var(--color-secondary);
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 .75rem .75rem rgba(0, 0, 0, 0.15);
+#more12 {
+    display: none;
 }
 
 /* Workshops Section */
@@ -674,91 +691,6 @@ body {
 /* Coaching Section */
 .coaching {
     background: var(--color-light-grey);
-}
-
-/* info Section */
-.info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-white);
-}
-
-.info-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.info-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    padding: 6rem 8rem 2rem 8rem;
-}
-
-.info-text h2 {
-    font-size: 4rem;
-}
-
-.info-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.info-item-heading {
-    display: flex;
-    align-items: center;
-}
-
-.info-item img {
-    width: 15px;
-    height: auto;
-    margin-right: 2rem;
-}
-
-.info-item h5 {
-    font-size: 1.5rem;
-    color: var(--color-third);
-}
-
-.faq-text {
-    background: var(--color-light-grey);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    padding: 6rem 8rem 2rem 8rem;
-}
-
-.faq-text h2 {
-    font-size: 4rem;
-}
-
-.faq-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.faq-item-heading {
-    display: flex;
-    align-items: center;
-}
-
-.faq-item-text {
-
-}
-
-.faq-item img {
-    width: 15px;
-    height: auto;
-    margin-right: 2rem;
-}
-
-.faq-item h5 {
-    font-size: 1.5rem;
-    color: var(--color-third);
 }
 
 /* Services Section */
@@ -836,76 +768,6 @@ body {
     width: 20px;
     height: auto;
     margin-right: 2rem;
-}
-
-/* Cards Section */
-.cards {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background: var(--color-light-grey);
-}
-
-.cards h2 {
-    color: var(--color-third);
-}
-
-.cards img {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 25px;
-    height: auto;
-}
-
-.cards-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 4rem;
-}
-
-.cards-item {
-    width: 30rem;
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    margin-right: 2rem;
-    margin-left: 2rem;
-}
-
-.cards-item-icon i {
-    color: var(--color-secondary);
-    font-size: 4rem;
-    align-self: center;
-    margin-right: 2rem;
-}
-
-.cards-item-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.cards-item-text h4 {
-    color: var(--color-secondary);
-}
-
-.cards-item-text a {
-    color: var(--color-primary);
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 1.6;
-    transition: .3s all;
-    text-decoration: none;
-}
-
-.cards-item-text a:hover {
-    transform: scale(1.1);
-    color: var(--color-white);
 }
 
 /* Banner Section */
@@ -1101,8 +963,6 @@ body {
     margin-top: 1rem;
     font-weight: bolder;
 }
-
-
   
 /* Add a blue color to the author */
 .author {
@@ -1404,48 +1264,120 @@ body {
 /* Large devices (laptops/desktops, 1024px and down) */
 @media only screen and (max-width: 1024px) {
     /* Header Section */
-    .header-text p {
-        padding-right: 10rem;
-    }
-
     .header-image img {
-        width: 450px;
-    }
-
-    /* Pricing Section */
-    .pricing-box {
-        flex-wrap: wrap;
-        padding: 0 8rem;
-    }
-
-    .pricing-card {
-        margin: 0rem 4rem 4rem 4rem;
-    }
-
-    /* Showcase Section */
-    .showcase-box4 img {
-        width: 500px;
+        width: 300px;
         height: auto;
+        margin-bottom: 3.5rem;
     }
 
-    /* Website Section */
-    .websites-image img {
+    .header-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-text h1 {
+        font-size: 12rem;
+        text-align: center;
+    }
+
+    .header-text p {
+        /* margin-bottom: 2.5rem; */
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    /* About Section */
+    .about-image img {
         width: 350px;
-        height: auto;
-        padding: 0 4rem;
+        margin-bottom: 6rem;
     }
 
-    /* Testimonials Section */
-    .testimonials-box {
-        padding: 0 2rem;
+    /* Events Section */
+    .event-main {
+        flex-wrap: wrap;
     }
+
+    .event-card {
+        margin-bottom: 4rem;
+    }
+
+    /* Team Section */
+    .team-card {
+        margin-bottom: 4rem;
+    }
+
+    /* Coaching Section */
+    .coaching h2 {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .coaching h3 {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .coaching p {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    /* Banner Section */
+    .banner-text {
+        flex-basis: 100%;
+    }
+
+    .banner-text h1 {
+        text-align: center;
+    }
+
+    .banner-text p {
+        text-align: center;
+        padding-right: 8rem;
+        padding-left: 8rem;
+    }
+
+    .banner-image {
+        flex-basis: 0%;
+    }
+
+    /* .banner-item .input {
+        margin-left: 9rem;
+    } */
+
 
 }
 
-/* Large devices (laptops/desktops, 992px and down) */
-/* Large devices (laptops/desktops, 1024px and down) */
-@media only screen and (max-width: 992px) {
+
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    
     /* Header Section */
+    .header-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-box h1 {
+        font-size: 6rem;
+        text-align: center;
+    }
+
     .bar__nav-toggle i {
         font-size: 4rem;
     }
@@ -1458,38 +1390,136 @@ body {
         color: var(--color-primary);
     }
 
-    .header-box h1 {
-        font-size: 5rem;
+    /* About Section */
+    .about-box {
+        flex-direction: column-reverse;
+        margin: 0 2rem;
     }
 
-    .header-image img {
-        width: 200px;
+    .about-image img {
+        width: 500px;
+        margin-bottom: 6rem;
+    }
+
+    .about-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Events Section */
+    .event-main {
+        margin: 0 2rem;
+        flex-wrap: wrap;
+    }
+
+    .event-card {
+        margin-bottom: 4rem;
+    }
+
+    .event-box {
+        padding: 0 0;
+    }
+
+    .event-button-box {
+        margin: 0 0;
+    }
+
+    /* Team Section */
+    .team h2 {
+        text-align: center;
+    }
+
+    .team h4 {
+        text-align: center;
+    }
+
+    .team p {
+        text-align: center;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .team-box {
+        margin: 0 0rem;
+        flex-wrap: wrap;
+    }
+
+    .team-card {
+        width: 25rem;
+        margin-bottom: 4rem;
+    }
+
+    .team-card p {
+        text-align: left;
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+
+    .team-button {
+        padding: 0 0;
+    }
+
+    /* Workshops Section */
+    .workshops-box {
+        margin: 0 2rem;
+        flex-direction: column;
+    }
+
+    .workshops-image img {
+        width: 95%;
+        margin-bottom: 4rem;
+    }
+
+    .workshops-text {
+        margin: 0 0;
+    }
+
+    /* Keynote Section */
+    .keynote-box {
+        margin: 0 2rem;
+        flex-direction: column-reverse;
+    }
+
+    .keynote-image img {
+        width: 95%;
+        margin-bottom: 4rem;
+    }
+
+    .keynote-text {
+        margin: 0 0;
+    }
+
+    /* Coaching Section */
+    .coaching h2 {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .coaching h3 {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .coaching p {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    /* Services Section */
+    .services-header {
+        height: 30vh;
+    }
+
+    .services-box {
+        margin: 0 2rem;
+        flex-wrap: wrap;
+    }
+
+    .services-card {
+        width: 56rem;
         height: auto;
-        padding: 0 2rem;
-    }
-
-    .header-text p {
-        padding-right: 4rem;
-    }
-
-    /* Banner Section */
-    .banner-box {
-        display: inline;
-    }
-
-    .banner-button {
-        padding-bottom: 2.5rem;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
-    
-    /* Header Section */
-    .header-image img {
-        width: 300px;
-        height: auto;
-        margin-bottom: 3.5rem;
+        margin: 2rem 0;
     }
 
     /* Banner Section */
@@ -1497,71 +1527,30 @@ body {
         padding: 0 2rem;
     }
 
-    /* Pricing Section */
-    .pricing {
-        padding: 0 2rem;
-    }
-
-    .pricing-box {
-        flex-wrap: wrap;
-    }
-
-    .pricing-card {
-        margin-bottom: 5rem;
-        width: 29rem;
-    }
-
-    /* Logos Section */
-    .logos {
-        padding: 0 2rem;
-    }
-
-    /* Showcase Section */
-    .showcase-box1 img {
-        width: 250px;
-        height: auto;
-    }
-
-    .showcase-box4 img {
-        width: 300px;
-        height: auto;
-    }
-
-    .showcase-button {
-        margin-top: 1rem;
-    }
-
-    /* Websites Section */
-    .websites-image img {
-        width: 250px;
-        height: auto;
-    }
-
-    /* Testimonials Section */
-    .testimonials-card1 {
-        width: 20rem;
-        height: auto;
-    }
-
-    .testimonials-card2 {
-        width: 20rem;
-        height: auto;
-    }
-
-    .testimonials-reviews-box {
-        flex-direction: column;
-    }
-
     /* Footer Section */
     .footer-container {
-        justify-content: space-between;
-
+        flex-direction: column;
     }
 
     .footer-box {
-        justify-content: flex-end;
-        align-items: flex-start;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-box-company {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-box-company p {
+        text-align: center;
+        padding-right: 12rem;
+        padding-left: 12rem;
     }
 
 }
@@ -1572,184 +1561,193 @@ body {
 
     /* Header Section */
     .header {
-        height: auto;
+        height: 100vh;
     }
 
     .header-box {
         flex-direction: column;
+        margin: 0 2rem;
     }
 
-    .header-text h1 {
-        font-size: 4.5rem;
-        margin: 4rem 0 2.5rem 0;
+    .header-box h1 {
+        font-size: 4rem;
     }
 
-    .header-text p {
-        margin-bottom: 2.5rem;
-    }
-
-    .header-image img {
-        width: 200px;
-        height: auto;
-        margin: 3.5rem 0 5rem 0;
+    .header-box h4 {
+        text-align: left;
     }
 
     .nav__link {
         color: var(--color-white);
     }
 
-    /* Showcase Section */
-    .showcase-container {
-        display: inline;
-        flex-direction: column;
-    }
-
-    .showcase-box1:nth-of-type(1) {
-        order: 2;
-    }
-
-    .showcase-box1 img {
-        width: 200px;
-        height: auto;
-    }
-
-    .showcase-box2:nth-of-type(2) {
-        order: 1;
-    }
-
-    .showcase-box3:nth-of-type(3) {
-        order: 3;
-    }
-
-    .showcase-box4:nth-of-type(4) {
-        order: 4;
-        margin-bottom: 6rem;
-    }
-
-    /* Pricing Section */
-    .pricing-box {
-        /* display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+    .header-button .btn-primary {
+        display: flex;
         justify-content: center;
-        align-items: center; */
-        padding: 0 1rem;
+        align-items: center;
+        text-align: center;
     }
 
-    .pricing-card {
-        margin: 0 0 5rem 0;
-        width: 27rem;
+    .nav .btn-primary {
+        text-align: center;
     }
 
-    /* Logos Section */
-    .logos {
-        padding-bottom: 0;
+    /* About Section */
+    .about {
+        overflow: hidden;
     }
-
-    .logos-box {
-        flex-wrap: wrap;
-    }
-
-    .logos-item {
-        padding: 1rem;
-        margin-bottom: 0;
-        width: 10rem;
-        height: 8rem;
-    }
-
-    .logos-item img {
-        width: 100%;
-    }
-
-    .logos-button-box {
-        flex-direction: column;
-        /* margin: 0 0; */
-        margin-top: -4rem;
-    }
-
-    .logos-button-item {
-        margin: 2rem 0;
-    }
-
-    /* Exhibit Section */
-    .exhibit-logos {
-        margin: 0 .5rem;
-    }
-
-    .exhibit-box {
-        margin: 0 1rem;
-    }
-
-
-    .exhibit-item {
-        padding: .25rem;
-    }
-
-    .exhibit-item img {
-        width: 100%;
-    }
-
-    /* Websites Section */
-    .websites-box1 {
-        flex-direction: column;
-    }
-
-    .websites-box2 {
-        flex-direction: column;
-    }
-
-    /* Cards Section */
-    .cards-box {
+    .about-box {
+        flex-direction: column-reverse;
         margin: 0 2rem;
     }
 
-    .cards h2 {
-        font-size: 4rem;
-    }
-    
-    .cards p {
-        padding: 0 2rem;
+    .about-image {
+        align-items: left;
+        justify-content: left;
     }
 
-    .cards-item p {
-        padding: 0 0;
+    .about-image img {
+        width: 300px;
+        margin-bottom: 4rem;
+        margin-right: 4rem;
     }
 
-    .cards-item {
-        height: 45rem;
+    .about-text {
+        padding-bottom: 4rem;
     }
 
-    /* Testimonials Section */
-    .testimonials-box {
+    .event-main {
+        margin: 0 2rem;
+        flex-wrap: wrap;
+    }
+
+    .event-card {
+        width: 30rem;
+        margin-bottom: 4rem;
+    }
+
+    /* Services Section */
+    .services-header {
+        height: 30vh;
+    }
+
+    .services {
+        margin: 0 4rem;
+    }
+    .services p {
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+    .services-box {
         flex-direction: column;
-        padding-bottom: 2rem;
+        margin: 0 0;
     }
 
-    .testimonials-card1 {
-        width: 25rem;
+    .services-card {
+        margin-top: 6rem;
+        width: 27rem;
     }
 
-    .testimonials-card2 {
-        margin: 6rem 0;
-        width: 25rem;
+    .services-button-box .btn-primary {
+        margin-bottom: 3rem;
+    }
+
+    /* Team Section */
+    .team h2 {
+        text-align: center;
+    }
+
+    .team h4 {
+        text-align: center;
+    }
+
+    .team p {
+        text-align: center;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .team-box {
+        margin: 0 0rem;
+    }
+
+    .team-card {
+        /* width: 40rem; */
+        margin-bottom: 4rem;
+    }
+
+    .team-card p {
+        text-align: left;
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+
+    /* Workshops Section */
+    .workshops-box {
+        margin: 0 2rem;
+        flex-direction: column;
+    }
+
+    .workshops-image img {
+        width: 95%;
+        margin-bottom: 4rem;
+    }
+
+    .workshops-text {
+        margin: 0 0;
+    }
+
+    /* Keynote Section */
+    .keynote-box {
+        margin: 0 2rem;
+        flex-direction: column-reverse;
+    }
+
+    .keynote-image img {
+        width: 95%;
+        margin-bottom: 4rem;
+    }
+
+    .keynote-text {
+        margin: 0 0;
+    }
+
+    /* Coaching Section */
+    .coaching h2 {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .coaching h3 {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .coaching p {
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 
     /* Banner Section */
-    .banner-box {
+    .banner-item {
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-item .input {
+        width: 100%;
+        height: 4rem;
+    }
+    
+    .banner-item .btn-submit {
+        width: 40%;
+        height: 100%;
+        margin-left: 6rem;
     }
 
     .banner-text h1 {
         font-size: 4.5rem;
         margin-bottom: 2.5rem;
-    }
-
-    .banner-image img {
-        width: 250px;
-        height: auto;
-        margin-bottom: 3rem;
     }
 
     .banner-button {
@@ -1760,17 +1758,49 @@ body {
         font-size: .85rem;
     }
 
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-box1-item .input {
+        width: 30rem;
+    }
+
+    .contact-box2-item .input {
+        width: 13rem;
+    }
+
+    .contact-box3-item textarea {
+        width: 30rem;
+    }
+
     /* Footer Section */
     .padding-bottom-8 {
         padding-bottom: 0rem;
     }
 
     .footer-container {
-        display: inline;
+        flex-direction: column;
     }
 
     .footer-box {
-        margin-left: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-box-company {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-box-company p {
+        text-align: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 
     .footer-contact {
@@ -1801,23 +1831,6 @@ body {
 
     .footer-socials h3 {
         margin-bottom: 1rem;
-    }
-
-    /* Login/Register Section */
-    .login-box {
-        margin-top: 2rem;
-    }
-
-    .login-item .input {
-        width: 30rem;
-    }
-    
-    .login-submit {
-        margin-bottom: 6rem;
-    }
-
-    .login-submit-item .btn-secondary {
-        margin-right: 11rem;
     }
 
 }
