@@ -43,8 +43,8 @@ body {
 /* Header Section */
 .header {
     height: 100vh;
-    /* background: url(../img/lagos-techie-IgUR1iX0mqM-unsplash.jpg); */
-    background: url(../img/avent-hero.jpg);
+    /* background: url(../img/avent-hero.jpg); */
+    background: url(../img/leone-venter-VieM9BdZKFo-unsplash\ \(1\).jpg);
     display: flex;
     align-items: center;
     padding-top: var(--bar-height);
@@ -62,7 +62,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.7); 
+    background: rgba(255, 255, 255, 0.1); 
 }
 
 .u-centered {
@@ -80,15 +80,19 @@ body {
     align-items: left;
     text-align: left;
     max-width: 800px;
+    position: absolute;
+    top: 34%;
+    left: 10%;
 }
 
 .header-box h1 {
+    color: var(--color-dark-grey);
     font-size: 5rem;
     text-transform: uppercase;
 }
 
 .header-box h4 {
-    color: var(--color-white);
+    color: var(--color-primary);
     text-align: left;
     font-size: 2rem;
 }
@@ -1351,11 +1355,7 @@ body {
     /* .banner-item .input {
         margin-left: 9rem;
     } */
-
-
 }
-
-
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
@@ -1365,6 +1365,9 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        top: 30%;
+        left: 0%;
+        margin: 0 4rem;
     }
 
     .header-button {
@@ -1376,6 +1379,7 @@ body {
     .header-box h1 {
         font-size: 6rem;
         text-align: center;
+        
     }
 
     .bar__nav-toggle i {
@@ -1555,18 +1559,19 @@ body {
 
 }
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
     /* Header Section */
     .header {
-        height: 100vh;
+        padding: 6rem 0;
     }
 
     .header-box {
         flex-direction: column;
         margin: 0 2rem;
+        top: 25%;
+        left: 0%;
     }
 
     .header-box h1 {
