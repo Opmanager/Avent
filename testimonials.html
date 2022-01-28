@@ -55,6 +55,7 @@
                 <a class="nav__link" href="services.html">Services</a>
                 <a class="nav__link" href="events.html">Events</a>
                 <a class="nav__link" href="consultants.html">Consultants</a>
+                <a class="nav__link" href="avent.html">Dr.Avent</a>
                 <a class="nav__link" href="testimonials.html">Testimonials</a>
                 <a class="btn-primary" href="#Contact">Contact</a>
             </nav>
@@ -74,7 +75,37 @@
         });
         </script>
 
-<!-- Slideshow -->
+<!-- Testimonials Section -->
+<section class="testimonials padding-top-16 padding-bottom-8" id="testimonials">
+    <div class="container">
+        <h2 class="primary-heading-primary margin-bottom-2 text-align-center">Client Testimonials</h2>
+        <h4 class="tertiary-heading-primary margin-bottom-8 text-align-center">Credibility & Professionalism</h4>
+        <div class="testimonials-box">
+            <div class="testimonials-image">
+                
+                <p class="primary-text-grey margin-bottom-2">"Being able to learn about all these issues in a setting that wasn’t set up for argument, but just in a place that allowed us to talk about what everything was and get information. It was more a discussion than a debate which is generally rare right now."</p>
+                <h4 class="tertiary-heading-primary">Student, VA Leadership Conference</h4>
+            </div>
+            <div class="testimonials-image">
+                
+                <p class="primary-text-grey margin-bottom-2">"Yolanda was awesome! She was interactive, her presentation was bright, informative, and entertaining, and it was just phenomenal how she presented it to us at the SLI. A lot of the terminology that I've heard thrown around was carefully explained in an engaging manner."</p>
+                <h4 class="tertiary-heading-primary">Charlottesville UnMasking Series Participant</h4>
+            </div>
+            <div class="testimonials-image">
+                
+                <p class="primary-text-grey margin-bottom-2">"I liked the social identity component of the presentation. I have never deconstructed my identity that much in-depth before."</p>
+                <h4 class="tertiary-heading-primary">VCU Student Leader</h4>
+            </div>
+            <div class="testimonials-image">
+                
+                <p class="primary-text-grey margin-bottom-2">"I liked her energy and positive attitude throughout the presentation.  She also did an amazing "job of making it fun and interactive!"</p>
+                <h4 class="tertiary-heading-primary">Teacher, Altoona School District</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Slideshow
 <div class="slideshow-container">
     <div class="slideshow-text">
         <h2 class="primary-heading-primary margin-bottom-1">Client Testimonials</h2>
@@ -139,45 +170,42 @@
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
     }
-    </script>
+    </script> -->
 
 <!-- Contact Section -->
 <section class="contact padding-bottom-8 padding-top-8" id="Contact">
     <div class="container">
         <div class="contact-container">
             <div class="contact-text">
-                <h4 class="tertiary-heading-primary margin-bottom-1">We'd love to chat with you!</h4>
+                <h4 class="tertiary-heading-primary margin-bottom-1">Stay Up To Date!</h4>
                 <h2 class="primary-heading-primary margin-bottom-4">Contact Our Team</h2>
             </div>
             <div class="contact-box">
-                <form action="">
+                <form name="contact" method="POST" data-netlify="true"><input type="hidden" name="form-name" value="contact">
                     <div class="contact-box1">
                         <div class="contact-box1-item">
                             <h5>First Name*</h5>
-                            <input type="text" name="First Name" id="" class="input" required>
+                            <input type="text" name="First Name" id="name" class="input" required>
                         </div>
                     </div>
                     <div class="contact-box2">
                         <div class="contact-box2-item">
                             <h5>Phone Number*</h5>
-                            <input type="text" name="First Name" id="" class="input" required>
+                            <input type="tel" name="Phone Number" id="phone number" class="input" required>
                         </div>
                         <div class="contact-box2-item">
                             <h5>Email*</h5>
-                            <input type="text" name="First Name" id="" class="input" required>
+                            <input type="email" name="Email Address" id="email" class="input" required>
                         </div>
                     </div>
                     <div class="contact-box3">
                         <div class="contact-box3-item">
                             <h5>Message*</h5>
-                            <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                            <textarea name="Message" id="message" cols="30" rows="10" required></textarea>
                         </div>
                     </div>
                     <div class="contact-box-submit margin-top-2 margin-bottom-2">
-                        <div class="contact-button">
-                            <a href="#" class="btn-tertiary">Submit</a>
-                        </div>
-                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                        <input type="submit" value="Submit" class="btn-primary">
                     </div>
                 </form>
             </div>
@@ -201,6 +229,7 @@
                     <a href="services.html"><li>Services</li></a>
                     <a href="events.html"><li>Events</li></a>
                     <a href="consultants.html"><li>Consultants</li></a>
+                    <a href="avent.html"><li>Dr.Avent</li></a>
                     <a href="testimonials.html"><li>Testimonials</li></a>
                 </ul>
             </div>
